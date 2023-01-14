@@ -8,7 +8,8 @@ VScode is a type of text editor that allows you to write and modify code which h
 2. Launch the VScode application and ensure it has downloaded properly (should look similar to picture below)
 
 ![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%204.40.58%20PM.png)
-> VS code home screen<img width="378" alt="Screen Shot 2023-01-13 at 5 21 14 PM" src="https://user-images.githubusercontent.com/69052552/212446247-928f3da5-ce50-4cc8-91f1-8d868e313fc0.png">
+> VS code home screen 
+<img width="378" alt="Screen Shot 2023-01-13 at 5 21 14 PM" src="https://user-images.githubusercontent.com/69052552/212446247-928f3da5-ce50-4cc8-91f1-8d868e313fc0.png">
 
 
 ## Finding your account details
