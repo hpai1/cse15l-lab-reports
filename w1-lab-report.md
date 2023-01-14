@@ -25,7 +25,7 @@ Follow the steps below to find and set-up your account.
 > UCSD Technology Site to find lab account details (Account name circled in red)
 4. If this is your first time accessing this account, follow the below steps to set-up your password
 5. Follow [this link](https://sdacs.ucsd.edu/~icc/password.php) and enter the required information. Note: your username is your CSE 15l account
-6. By doing so, you should end up on the below site
+6. After doing so, you should end up on the below site
 <img width="1470" alt="Screen Shot 2023-01-13 at 4 54 38 PM" src="https://user-images.githubusercontent.com/69052552/212457001-58864014-ad95-4f88-bd71-b0be6ff173ab.png">
 > Page to set-up password CSE15l account 
 
