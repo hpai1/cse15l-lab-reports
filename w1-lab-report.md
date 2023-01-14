@@ -69,5 +69,5 @@ To work on this system, you have to use the terminal and the various commands it
 > Contents of the "perl5" folder (nothing appeared, so it is empty)
 5. Navigate to the public class folder "/home/linux/ieng6/cs15lwi23/public" using the command `$ cd /home/linux/ieng6/cs15lwi23/public`
 6. After using `ls` here, we see a couple of items, including a "hello.txt" file. To see its contents, type `$ cat hello.txt`
-![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%205.14.12%20PM.png)
+![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%206.04.45%20PM.png)
 > Terminal output showing the contents of the public class folder and the content of the "hello.txt" file
