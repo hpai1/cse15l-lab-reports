@@ -26,7 +26,7 @@ Horizontal rule:
 
 ---
 
-`print("Hello World")` one line code
+`print("Hello World")` one line code.
 
 ```
 # code block
