@@ -50,9 +50,10 @@ RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
 This key is not known by any other names
 Are you sure you want to continue connecting (yes/no/[fingerprint])?
   ```
-6. Enter yes to confirm your connection
+6. Enter `yes` to confirm your connection
 7. Next, enter your password. Note: it will not appear as you're typing for security reasons
-8. If done right, the below should appear on the command line. 
+8. If done right, the below should appear on the command line.
+
 <img width="499" alt="Screen Shot 2023-01-13 at 5 14 12 PM" src="https://user-images.githubusercontent.com/69052552/212457005-bff099eb-25ce-440c-a302-6c7f2077ebe5.png">
 > VS Code terminal prompt after log-in is successful
 
@@ -60,10 +61,12 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 Now, you are remotely connected to a back-end system from your local machine. 
 To work on this system, you have to use the terminal and the various commands it supports
 1. To show all the files on this system, use the command `$ ls`
+
 <img width="311" alt="Screen Shot 2023-01-13 at 5 14 56 PM" src="https://user-images.githubusercontent.com/69052552/212457033-7a2c4f64-292e-4467-b8de-29dbfacb7fc3.png">
 > Terminal output from the `$ ls` command that shows contents of working directory
 2. We can see that there is one file and one directory. 
 3. To view all files and directories, use `$ ls -a`, which shows hidden items
+
 <img width="828" alt="Screen Shot 2023-01-13 at 5 15 51 PM" src="https://user-images.githubusercontent.com/69052552/212457037-874a23f4-d85b-4b5f-b8a7-1d98e3f0cc8a.png">
 > Terminal output from the `$ ls -a` command that shows all the contents of working directory
 4. To see the contents of the "perl5" file, use the command `$ cd perl5` followed by `$ ls`
