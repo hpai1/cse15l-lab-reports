@@ -37,7 +37,7 @@ In this case, we are trying to connect to our ieng6 CSE15L account.
 
 1. Click on the two icons in the bottom bar on the bottom left of the screen. 
 2. Open a terminal on VS Code by navigating to the terminal tab
-![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%204.54.38%20PM.png)
+![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%205.35.28%20PM.png)
 > VS Code window that shows open terminal and highlights bottom left icons
 3. To connect to your account, enter the command `$ ssh cs15lwi23zzz@ieng6.ucsd.edu` without the "$" symbol 
 4. Replace the 'zzz' in the above command with the letters in your account
@@ -47,7 +47,6 @@ In this case, we are trying to connect to our ieng6 CSE15L account.
 RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
 This key is not known by any other names
 Are you sure you want to continue connecting (yes/no/[fingerprint])?
-  
   ```
 6. Enter yes to confirm your connection
 7. Next, enter your password. Note: it will not appear as you're typing for security reasons
