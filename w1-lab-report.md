@@ -51,15 +51,23 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 6. Enter yes to confirm your connection
 7. Next, enter your password. Note: it will not appear as you're typing for security reasons
 8. If done right, the below should appear on the command line. 
-![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%204.54.38%20PM.png)
-> VS Code window that shows open terminal and highlights bottom left icons
+![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%205.14.12%20PM.png)
+> VS Code terminal prompt after log-in is successful
 
 ## Entering Commands
 Now, you are remotely connected to a back-end system from your local machine. 
 To work on this system, you have to use the terminal and the various commands it supports
 1. To show all the files on this system, use the command `$ ls`
+![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%205.14.12%20PM.png)
+> Terminal output from the `$ ls` command that shows contents of working directory
 2. We can see that there is one file and one directory. 
 3. To view all files and directories, use `$ ls -a`, which shows hidden items
+![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%205.14.12%20PM.png)
+> Terminal output from the `$ ls -a` command that shows all the contents of working directory
 4. To see the contents of the "perl5" file, use the command `$ cd perl5` followed by `$ ls`
+![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%205.14.12%20PM.png)
+> Contents of the "perl5" folder (nothing appeared, so it is empty)
 5. Navigate to the public class folder "/home/linux/ieng6/cs15lwi23/public" using the command `$ cd /home/linux/ieng6/cs15lwi23/public`
 6. After using `ls` here, we see a couple of items, including a "hello.txt" file. To see its contents, type `$ cat hello.txt`
+![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%205.14.12%20PM.png)
+> Terminal output showing the contents of the public class folder and the content of the "hello.txt" file
