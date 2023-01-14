@@ -10,6 +10,15 @@ VScode is a type of text editor that allows you to write and modify code which h
 ![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%204.40.58%20PM.png)
 > VS code home screen
 
+## Finding your account details
+Each student in this class has their own account to manage and edit files. 
+To connect via SSH, you need to first connect to the server that is respective to your account. 
+Follow the steps below to find and set-up your account. 
+1. Click on [this link](https://sdacs.ucsd.edu/~icc/index.php) which takes you to the below website. 
+![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%204.40.58%20PM.png)
+> VS code home screen
+
+
 ## Connecting to remote ssh
 SSH is a protocol that allows you to connect to a computer or server remotely. 
 In this case, we are trying to connect to our ieng6 CSE15L account. 
