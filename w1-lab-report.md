@@ -19,10 +19,12 @@ Follow the steps below to find and set-up your account.
 > UCSD Technology Account Lookup Homepage
 2. Enter your UCSD username and student ID in the respective fields.
 3. Locate your CSE 15l account username which starts with the letters "cs15l" as shown circled in the red circle below
-![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%204.45.33%20PM.png)
+![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%204.47.56%20PM.png)
+> UCSD Technology Site to find lab account details (Account name circled in red)
 4. If this is your first time accessing this account, follow the below steps to set-up your password
 5. Follow [this link](https://sdacs.ucsd.edu/~icc/password.php) and enter the required information. Note: your username is your CSE 15l account
 6. By doing so, you should end up on the below site
+![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%204.47.56%20PM.png)
 
 7. Enter your current password (UCSD password) and a new password for this account
 
