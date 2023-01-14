@@ -24,9 +24,11 @@ Follow the steps below to find and set-up your account.
 4. If this is your first time accessing this account, follow the below steps to set-up your password
 5. Follow [this link](https://sdacs.ucsd.edu/~icc/password.php) and enter the required information. Note: your username is your CSE 15l account
 6. By doing so, you should end up on the below site
-![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%204.47.56%20PM.png)
+![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%204.54.38%20PM.png)
+> Page to set-up password CSE15l account 
 
 7. Enter your current password (UCSD password) and a new password for this account
+8. Note that after doing this, it will take about 15 minutes for your new password to go into effect
 
 
 ## Connecting to remote ssh
@@ -35,6 +37,8 @@ In this case, we are trying to connect to our ieng6 CSE15L account.
 
 1. Click on the two icons in the bottom bar on the bottom left of the screen. 
 2. Open a terminal on VS Code by navigating to the terminal tab
+![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%204.54.38%20PM.png)
+> VS Code window that shows open terminal and highlights bottom left icons
 3. To connect to your account, enter the command `$ ssh cs15lwi23zzz@ieng6.ucsd.edu` without the "$" symbol 
 4. Replace the 'zzz' in the above command with the letters in your account
 5. If done correctly, the below prompt should appear
@@ -48,6 +52,8 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 6. Enter yes to confirm your connection
 7. Next, enter your password. Note: it will not appear as you're typing for security reasons
 8. If done right, the below should appear on the command line. 
+![Image](https://github.com/hpai1/cse15l-lab-reports/blob/main/Screen%20Shot%202023-01-13%20at%204.54.38%20PM.png)
+> VS Code window that shows open terminal and highlights bottom left icons
 
 ## Entering Commands
 Now, you are remotely connected to a back-end system from your local machine. 
