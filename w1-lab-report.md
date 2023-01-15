@@ -19,6 +19,7 @@ Follow the steps below to find and set-up your account.
 
 <img width="1470" alt="Screen Shot 2023-01-13 at 4 45 33 PM" src="https://user-images.githubusercontent.com/69052552/212456983-59965fbe-67ea-44aa-934b-7ebb16f04721.png">
 > UCSD Technology Account Lookup Homepage
+
 2. Enter your UCSD username and student ID in the respective fields.
 3. Locate your CSE 15l account username which starts with the letters "cs15l" as shown in the red circle
 <img width="1470" alt="Screen Shot 2023-01-13 at 4 47 56 PM" src="https://user-images.githubusercontent.com/69052552/212456992-00c9fbc7-2d2f-46a5-907f-ec90150474e0.png">
