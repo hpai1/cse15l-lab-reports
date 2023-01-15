@@ -44,13 +44,12 @@ In this case, we are trying to connect to our ieng6 CSE15L account.
 3. To connect to your account, enter the command `$ ssh cs15lwi23zzz@ieng6.ucsd.edu` without the "$" symbol 
 4. Replace the 'zzz' in the above command with the letters in your account
 5. If done correctly, the below prompt should appear
-```
-The authenticity of host 'ieng6.ucsd.edu (128.54.70.238)' can't be established.
-RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
-This key is not known by any other names
-Are you sure you want to continue connecting (yes/no/[fingerprint])?
-
-```
+  ```
+  The authenticity of host ieng6.ucsd.edu (128.54.70.238) can't be established.
+  RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
+  This key is not known by any other names
+  Are you sure you want to continue connecting (yes/no/[fingerprint])?
+  ```
 6. Enter `yes` to confirm your connection
 7. Next, enter your password. Note: it will not appear as you're typing for security reasons
 8. If done right, the below should appear on the command line.
