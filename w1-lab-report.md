@@ -53,6 +53,7 @@ In this case, we are trying to connect to our ieng6 CSE15L account.
 6. Enter `yes` to confirm your connection
 7. Next, enter your password. Note: it will not appear as you're typing for security reasons
 8. If done right, the below should appear on the command line.
+
 <img width="499" alt="Screen Shot 2023-01-13 at 5 14 12 PM" src="https://user-images.githubusercontent.com/69052552/212457005-bff099eb-25ce-440c-a302-6c7f2077ebe5.png">
 > VS Code terminal prompt after log-in is successful
 
@@ -60,6 +61,7 @@ In this case, we are trying to connect to our ieng6 CSE15L account.
 Now, you are remotely connected to a back-end system from your local machine. 
 To work on this system, you have to use the terminal and the various commands it supports
 1. To show all the files on this system, use the command `$ ls`
+
 <img width="311" alt="Screen Shot 2023-01-13 at 5 14 56 PM" src="https://user-images.githubusercontent.com/69052552/212457033-7a2c4f64-292e-4467-b8de-29dbfacb7fc3.png">
 > Terminal output from the `$ ls` command that shows contents of working directory
 2. We can see that there is one file and one directory. 
