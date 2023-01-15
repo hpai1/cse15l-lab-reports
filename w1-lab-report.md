@@ -62,8 +62,9 @@ Now, you are remotely connected to a back-end system from your local machine.
 To work on this system, you have to use the terminal and the various commands it supports
 1. To show all the files on this system, use the command `$ ls`
 
-<img width="311" alt="Screen Shot 2023-01-13 at 5 14 56 PM" src="https://user-images.githubusercontent.com/69052552/212457033-7a2c4f64-292e-4467-b8de-29dbfacb7fc3.png">
+<img width="311" alt="Screen Shot 2023-01-13 at 5 14 56 PM" src="https://user-images.githubusercontent.com/69052552/212457033-7a2c4f64-292e-4467-b8de-29dbfacb7fc3.png"> 
 > Terminal output from the `$ ls` command that shows contents of working directory
+
 2. We can see that there is one file and one directory. 
 3. To view all files and directories, use `$ ls -a`, which shows hidden items
 <img width="828" alt="Screen Shot 2023-01-13 at 5 15 51 PM" src="https://user-images.githubusercontent.com/69052552/212457037-874a23f4-d85b-4b5f-b8a7-1d98e3f0cc8a.png">
