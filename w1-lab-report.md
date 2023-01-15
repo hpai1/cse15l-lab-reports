@@ -1,5 +1,5 @@
 # Week 1 Lab Report 
-*Hrithik Pai*
+*Hrithik Pai - A17311788*
 
 
 ## Installing VS Code
