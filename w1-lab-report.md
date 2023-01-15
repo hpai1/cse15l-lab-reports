@@ -73,3 +73,4 @@ To work on this system, you have to use the terminal and the various commands it
 6. After using `ls` here, we see a couple of items, including a "hello.txt" file. To see its contents, type `$ cat hello.txt`
 <img width="616" alt="Screen Shot 2023-01-13 at 6 04 45 PM" src="https://user-images.githubusercontent.com/69052552/212457054-f79d57e2-0d46-4c55-816f-be5a45315312.png">
 > Terminal output showing the contents of the public class folder and the content of the "hello.txt" file
+7. To exit from the connection session, use the `$ exit` command
