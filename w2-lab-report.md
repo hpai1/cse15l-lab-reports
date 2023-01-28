@@ -73,6 +73,20 @@ public void reverseInPlaceZeros() {
 
 > Symptom on VSCode when the above test was run. The green check mark on the left shows that the test passed.
 
+**The Bug Before Changes** 
+``` 
+  arr[i] = newArray[arr.length - i - 1];
+}
+return arr;
+``` 
+
+**Corresponding Code After Changes** 
+```
+  newArray[i] = arr[arr.length - i - 1];
+}
+return newArray;
+``` 
+
 
 
 
