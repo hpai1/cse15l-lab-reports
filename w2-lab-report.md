@@ -87,6 +87,9 @@ return arr;
 return newArray;
 ``` 
 
+In this method, the bug was a result of the programmer mixing up the two arrays that are being used. Originally, the programmer did `arr[i] = newArray[arr.length - i - 1];`. This line of code will always produce an array of all zeros because it is taking the values of *newArray*, backwards, and assigning it to *arr*. *newArray* is an array of all 0s because it is the default value of an integer, so this line of code is essentially populating *arr* with 0s. The second error is that the programmer initially returned the original array, *arr*, even though the comments mentioned to return a new array. 
+
+To fix this, I replaced the line inside the for-loop with `newArray[i] = arr[arr.length - i - 1];`. This line now takes each value in *arr* backwards, and puts it in the new array, *newArray*. I also modified the return statement to `return newArray`, so that it returns the new array, instead of the old one.
 
 
 
