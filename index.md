@@ -2,6 +2,8 @@
 
 [**Lab 1**](https://hpai1.github.io/cse15l-lab-reports/w1-lab-report)
 
+[**Lab 2**](https://hpai1.github.io/cse15l-lab-reports/w2-lab-report) 
+
 # UCSD CSE15L course
 
 ## Hrithik's profile
