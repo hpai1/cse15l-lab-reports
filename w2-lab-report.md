@@ -92,4 +92,5 @@ In this method, the bug was a result of the programmer mixing up the two arrays 
 To fix this, I replaced the line inside the for-loop with `newArray[i] = arr[arr.length - i - 1];`. This line now takes each value in *arr* backwards, and puts it in the new array, *newArray*. I also modified the return statement to `return newArray`, so that it returns the new array, instead of the old one.
 
 
-
+## Reflection
+In Lab 2, I learned how to set-up a local host and read urls. Although I knew about local hosts and the general concept behind them, I never knew that it was possible to read URLs and update the site live without recompiling the .java file. Adding onto this, I learned some new URL class methods, such as .getPath() and .getQuery(). I also learned about ports numbers and how they relates to local hosts. I also found out how to specify the port number when running my program through the command line.
