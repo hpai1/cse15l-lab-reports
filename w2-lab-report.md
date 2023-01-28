@@ -34,3 +34,43 @@ In this query, we can see that "404 not found" is returned. This is because I ha
 If the path does not include the string "add-message", the program returns a "404 not found". In this case, the path is "add", 
 which does not contain "add-message", so it prints out a "404 not found", as an error.
 
+## Debugging Programs with Bugs
+
+The method below is trying to reverse the elements of an array by making a new array and returning that new array. 
+Let's see how it performs when it is tested.
+
+<img width="574" alt="Screen Shot 2023-01-28 at 2 43 19 PM" src="https://user-images.githubusercontent.com/69052552/215294446-287ccd88-c788-4abe-a7b2-e166c9262b0a.png">
+
+**Failure-Inducing Input**
+```
+@Test
+public void reverseInPlaceNums() { 
+  int [] input = {1,2,3,4}; 
+  assertArrayEquals(new int[]{4,3,2,1}, ArrayExamples.reversed(input));
+}
+```
+> JUnit test of reversed() that showcases a bug in the program.
+
+**Symptom**
+<img width="617" alt="Screen Shot 2023-01-28 at 2 50 38 PM" src="https://user-images.githubusercontent.com/69052552/215294673-dc975342-74d7-4a01-9917-1c63b2037a3c.png">
+
+> Symptom on VSCode when the above test was run. Clearly shows that symptom was not same as expected value.
+
+**Non-Failure Input** 
+```
+@Test
+public void reverseInPlaceZeros() { 
+  int [] input = {0,0,0,0}; 
+  assertArrayEquals(new int[]{0,0,0,0}, ArrayExamples.reversed(input));
+}
+```
+> JUnit test of reversed() method that doesn't induce a failure
+
+**Symptom**
+<img width="611" alt="Screen Shot 2023-01-28 at 2 51 51 PM" src="https://user-images.githubusercontent.com/69052552/215294709-b62c9211-5c5c-47f8-a41e-7b14050d3bd7.png">
+
+> Symptom on VSCode when the above test was run. The green check mark on the left shows that the test passed.
+
+
+
+
