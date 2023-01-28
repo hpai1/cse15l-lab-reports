@@ -51,7 +51,8 @@ public void reverseInPlaceNums() {
 ```
 > JUnit test of reversed() that showcases a bug in the program.
 
-**Symptom**
+**Corresponding Symptom**
+
 <img width="617" alt="Screen Shot 2023-01-28 at 2 50 38 PM" src="https://user-images.githubusercontent.com/69052552/215294673-dc975342-74d7-4a01-9917-1c63b2037a3c.png">
 
 > Symptom on VSCode when the above test was run. Clearly shows that symptom was not same as expected value.
@@ -66,7 +67,8 @@ public void reverseInPlaceZeros() {
 ```
 > JUnit test of reversed() method that doesn't induce a failure
 
-**Symptom**
+**Corresponding Symptom**
+
 <img width="611" alt="Screen Shot 2023-01-28 at 2 51 51 PM" src="https://user-images.githubusercontent.com/69052552/215294709-b62c9211-5c5c-47f8-a41e-7b14050d3bd7.png">
 
 > Symptom on VSCode when the above test was run. The green check mark on the left shows that the test passed.
