@@ -25,4 +25,11 @@ The method adds the String to a running String, called *words*, and appends a ne
 To get the string, I used the .split("=") method to split the actual word from the query. 
 
 **Output 2**
+<img width="333" alt="Screen Shot 2023-01-28 at 2 06 22 PM" src="https://user-images.githubusercontent.com/69052552/215293160-8b4aa83e-d841-49a7-b101-78dbb7122fd5.png">
+
+> Web Server output when asked to incorrectly add the word "Java".
+
+In this query, we can see that "404 not found" is returned. This is because I have an if statement to validate the path and query. 
+If the path does not include the string "add-message", the program returns a "404 not found". In this case, the path is "add", 
+which does not contain "add-message", so it prints out a "404 not found", as an error.
 
