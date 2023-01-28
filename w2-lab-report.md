@@ -9,6 +9,7 @@ The parameter that is passed is the word in the url, found by using the .split()
 The add method appends the word to a running String with the escape sequence "\n" after it, making it print on a newline.
 
 <img width="479" alt="Screen Shot 2023-01-28 at 1 49 14 PM" src="https://user-images.githubusercontent.com/69052552/215292631-93cdf066-0944-4f91-a01d-fa17df66ad0f.png">
+
 > My Web Server output when asked to add a "Hello World" message.
 
 In this query, the add(String w) method is called. In this case, the String "Hello World" is passed to the method.
