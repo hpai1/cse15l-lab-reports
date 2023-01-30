@@ -81,7 +81,17 @@ which does not contain "add-message", so it prints out a "404 not found", as an 
 The method below is trying to reverse the elements of an array by making a new array and returning that new array. 
 Let's see how it performs when it is tested.
 
-<img width="574" alt="Screen Shot 2023-01-28 at 2 43 19 PM" src="https://user-images.githubusercontent.com/69052552/215294446-287ccd88-c788-4abe-a7b2-e166c9262b0a.png">
+```
+// Returns a *new* array with all the elements of the input array in reversed
+// order
+static int[] reversed(int[] arr) {
+  int[] newArray = new int[arr.length];
+  for(int i = 0; i < arr.length; i += 1) {
+    arr[i] = newArray[arr.length - i - 1];
+  }
+  return arr;
+}
+```
 
 **Failure-Inducing Input**
 ```
