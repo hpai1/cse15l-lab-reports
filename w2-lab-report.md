@@ -7,6 +7,7 @@ To make a Web Server, we need to install Java packages, such as the URI package,
 My algorithm works by first validating the url then calling the add() method. 
 The parameter that is passed is the word in the url, found by using the .split() method. 
 The add method appends the word to a running String with the escape sequence "\n" after it, making it print on a newline.
+Everytime a new url is given, the URI object is modified as well as the local variable *words*.
 
 **Web Server Code** 
 
@@ -20,7 +21,7 @@ The add method appends the word to a running String with the escape sequence "\n
 
 > My Web Server output when asked to add a "Hello World" message.
 
-In this query, the add(String w) method is called. In this case, the String "Hello World" is passed to the method.
+In this query, the URI variable gets modified to the new url, *localhost:4000/add-message?s=Hello%20World*. The add(String w) method is also called in the program. In this case, the String "Hello World" is passed to the method.
 The method adds the String to a running String, called *words*, and appends a newline character at the end.
 To get the string, I used the .split("=") method to split the actual word from the query. 
 
