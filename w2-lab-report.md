@@ -10,10 +10,51 @@ The add method appends the word to a running String with the escape sequence "\n
 Everytime a new url is given, the URI object is modified as well as the local variable *words*.
 
 **Web Server Code** 
+``` 
+import java.io.IOException;
+import java.net.URI;
 
-<img width="719" alt="Screen Shot 2023-01-28 at 2 01 46 PM" src="https://user-images.githubusercontent.com/69052552/215293031-e4a61ec3-22ff-4cd4-b20e-285b55f9a1ef.png">
+class Handler implements URLHandler { 
 
-> VS Code tab containing the code to my web server
+    String words = "";    
+
+    public String handleRequest(URI url) { 
+
+        if (url.getPath().equals("/")) { 
+            return "Start by adding words";
+        }
+
+        if (url.getPath().contains("add-message")==false) { 
+            return "404 Not Found";
+        }
+
+        
+        String[] query = url.getQuery().split("=");
+
+        add(query[1]);
+
+        return words;
+    }
+
+    private void add(String w) {
+        words = words + w + "\n";
+    }
+}
+
+class WebServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+        Server.start(port, new Handler());
+    }
+}
+```
+
+> Java code for my localhost web server
 
 **Output 1**
 
