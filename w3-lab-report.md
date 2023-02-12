@@ -7,6 +7,7 @@ In this report, I will be exploring the grep command. The grep command is used t
 
 
 **-r Flag** 
+
 The -r flag is used to search recursively within a directory. This is useful if the file system has a complex heirarchy because grep can just search all the files within the given directory. The command follows `$ grep -r "*word*" *directory*` 
 
 ```
@@ -16,7 +17,8 @@ written_2/non-fiction/OUP/Berk/CH4.txt:Piaget acknowledged the emotional functio
 written_2/non-fiction/OUP/Berk/CH4.txt:Around age 2, children begin to pretend with less realistic toys, such as a block for a telephone. And sometime during the third year, they can imagine objects and events with little or no support from the real world, as when they say to a play
 ...
 ```
->Truncated output when using -r flag on the Berk directory when searching for the word "world" 
+> Truncated output when using -r flag on the Berk directory when searching for the word "world"
+
 In the above command, grep searched recursively for the word "world" in the Berk directory. When it searched recursively, it went through all the files in the Berk directory and found all instances of "world" and printed the lines surrounding that word within each file.
 
 ```
@@ -26,6 +28,7 @@ Parents are wise to limit children’s access to TV to about one to one-and-a-ha
 Chinese and Japanese parents spend a great deal of time helping their children with homework—far more than American parents do. Asian parents also communicate often with teachers about how to help their child learn at his or her best. Rather than being dependent, Chinese and Japanese students develop into well adjusted, excellent students51—at the top in academic achievement in the world. 
 ```
 > Output when using -r flag on the ch7.txt file in the Berk directory
+
 As we can see from above, the -r flag can also be used on a .txt file, meaning it will not throw an error if a directory is not provided. If we give a .txt file to the -r flag, the -r flag's function gets omitted because there is nothing to search recursively for. 
 
 **-i Flag** 
