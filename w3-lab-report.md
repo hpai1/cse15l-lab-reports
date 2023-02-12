@@ -1,15 +1,15 @@
-# Week 3 Lab Report
+# Week 3 Lab Report - Grep command
 
 *Hrithik Pai - A17311788*
 
-## All About the Grep Command
 In this report, I will be exploring the grep command. The grep command is used to search for a string within files. As with any other command, grep has flags that can be used to alter the output. Here, I will be discussing 4 of these flags. 
 
 
-**-r Flag** 
+## -r Flag 
 
 The -r flag is used to search recursively within a directory. This is useful if the file system has a complex heirarchy because grep can just search all the files within the given directory. The command follows `$ grep -r "word" directory` 
 
+**Example 1*
 ```
 [hpai@ieng6-203]:skill-demo1-data:384$ grep -r "world" written_2/non-fiction/OUP/Berk/
 written_2/non-fiction/OUP/Berk/CH4.txt:Psychoanalyst Erik Erikson built on Freud’s vision, expanding his picture of 
@@ -39,6 +39,7 @@ the real world, as when they say to a play
 
 In the above command, grep searched recursively for the word "world" in the Berk directory. When it searched recursively, it went through all the files in the Berk directory and found all instances of "world" and printed the lines surrounding that word within each file.
 
+**Example 2*
 ```
 [hpai@ieng6-203]:skill-demo1-data:387$ grep -r "world" written_2/non-fiction/OUP/Berk/ch7.txt
 In this chapter, I take up dilemmas that today’s parents face in rearing young children. Throughout this book, we have touched on myriad forces that make
@@ -63,12 +64,13 @@ As we can see from above, the -r flag
 can also be used on a .txt file, meaning it will not throw an error if a directory is not provided. If we give a .txt file to the -r flag, the -r flag's
 function gets omitted because there is nothing to search recursively for. 
 
-**-l Flag** 
+## -l Flag 
 
 The -l flag is used to list only the files names of the files which are found using grep. In the above output, it can be tedious trying to sort through the
 files if you are trying to search for a particular file name, which is where -l is helpful. It omits all the text that is printed, and only prints the file
 names.
 
+**Example 1*
 ```
 [hpai@ieng6-203]:skill-demo1-data:390$ grep -r -l "world" written_2/non-fiction/OUP/Berk/
 written_2/non-fiction/OUP/Berk/CH4.txt
@@ -80,6 +82,7 @@ written_2/non-fiction/OUP/Berk/ch7.txt
 
 As seen in the above output, when I used the -l command, the terminal only printed out the names of the files that contained the given word, as opposed to printing out the file names and the contents of the file. 
 
+**Example 2*
 ``` 
 [hpai@ieng6-203]:OUP:407$ grep -l "econosphere" Kauffman/ch9.txt Kauffman/ch6.txt
 Kauffman/ch9.txt
@@ -88,10 +91,11 @@ Kauffman/ch9.txt
 
 In the above example, I searching for the word "econosphere" in the ch9.txt and the ch6.txt files. I tell grep to print out only the name of the file that contains that word using the -l flag. The output printed ch9.txt, meaning that the word exists in that text file, not in the ch6.txt file. 
 
-**-n Flag** 
+## -n Flag 
 
 The -n flag prints out the line number where the specified string is found in the file. This can be combined with other flags to alter the terminal's output, as shown below. 
 
+**Example 1*
 ```
 [hpai@ieng6-203]:OUP:433$ grep -r -n "Neighboring" Kauffman
 Kauffman/ch8.txt:185:If one thinks of the measure of how close the output of a binary string program is to the 
@@ -104,6 +108,7 @@ fitnesses that have no correlation.
 
 As we can see in the output, the -n flag only adds a slight, but important change in the terminal's output. The -n flag includes the line number in which the word is found. As we can see above, the word "Neighboring" is found on line 185 in the ch8.txt file.
 
+**Example 2*
 ```
 [hpai@ieng6-203]:OUP:434$ grep -r -n -l "Neighboring" Kauffman
 Kauffman/ch8.txt
@@ -112,12 +117,13 @@ Kauffman/ch8.txt
 
 In the above example, I ran the same -n command, but also included the -l flag, which only lists the names of the files in which the word is found. Since the -l flag only lists filenames, we can see that the -n flag had no effect on the output, despite coming first in the command. This leads me to believe that certain flags have priority over others because if the order of the -n and -l flags were switched, the same output is shown.
 
-**-i Flag** 
+## -i Flag 
 
 The -i flag when using grep is used when you want to ignore the case of the word you are searching for. 
 When grep searches for the string in the file, it searches for the exact match. In other words, it also matches the case that you provide. When the -i
 flag is used, the case of the word is ignored, so it searches for all instances of the sequence of characters. 
 
+**Example 1*
 ``` 
 [hpai@ieng6-203]:OUP:421$ grep -r -i "Robust" Kauffman
 Kauffman/ch8.txt:•The number of state cycle attractors robustly scales as a square root function of the number of genes in 
@@ -139,6 +145,7 @@ arise and are respected by critters and firms, creatures and cognoscenti.
 In the above example, I was searching for the string "Robust" since I used the -i flag, grep searched for all instances of the sequence of characters and omitted any instances of lowercase and uppercase characters. We see this within the first two text files, where it shows "robust" and "Robust", 
 proving that casing was disregarded. 
 
+**Example 2*
 ``` 
 [hpai@ieng6-203]:OUP:440$ grep -n -i -l "Neighboring" Kauffman/ch9.txt Kauffman/ch8.txt
 Kauffman/ch9.txt
