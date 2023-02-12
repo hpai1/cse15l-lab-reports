@@ -55,7 +55,23 @@ into well adjusted, excellent students51—at the top in academic achievement in
 ```
 > Output when using -r flag on the ch7.txt file in the Berk directory
 
-As we can see from above, the -r flag can also be used on a .txt file, meaning it will not throw an error if a directory is not provided. If we give a .txt file to the -r flag, the -r flag's function gets omitted because there is nothing to search recursively for. 
+As we can see from above, the -r flag 
+can also be used on a .txt file, meaning it will not throw an error if a directory is not provided. If we give a .txt file to the -r flag, the -r flag's
+function gets omitted because there is nothing to search recursively for. 
+
+**-l Flag** 
+
+The -l flag is used to list only the files names of the files which are found using grep. In the above output, it can be tedious trying to sort through the
+files if you are trying to search for a particular file name, which is where -l is helpful. It omits all the text that is printed, and only prints the file
+names.
+
+```
+[hpai@ieng6-203]:skill-demo1-data:390$ grep -r -l "world" written_2/non-fiction/OUP/Berk/
+written_2/non-fiction/OUP/Berk/CH4.txt
+written_2/non-fiction/OUP/Berk/ch1.txt
+written_2/non-fiction/OUP/Berk/ch2.txt
+written_2/non-fiction/OUP/Berk/ch7.txt
+```
 
 **-i Flag** 
 The -i flag when using grep is used when you want to ignore the case of the word you are searching for. 
