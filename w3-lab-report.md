@@ -27,8 +27,8 @@ with gestures, language, and drawings, develops rapidly in early childhood. Thro
 their capacity to represent their experiences.3 For example, when Sophie pretended to put the animals to bed and used a 
 TinkerToy to stand for a lollipop, she represented in her mind what formerly she could experience only directly—by going 
 to bed or sucking a lollipop. Practicing and solidifying modes of representation, Piaget emphasized, make it possible for 
-the child to free thought from the here and now; create larger images of reality that take into account past, present, and 
-future; and transform those images mentally in the service of logical thinking. 
+the child to free thought from the here and now; create larger images of reality that take into account past, present, 
+and future; and transform those images mentally in the service of logical thinking. 
 
 written_2/non-fiction/OUP/Berk/CH4.txt:Around age 2, children begin to pretend with less realistic toys, such as a block 
 for a telephone. And sometime during the third year, they can imagine objects and events with little or no support from 
@@ -89,7 +89,56 @@ Kauffman/ch9.txt
 In the above example, I searching for the word "econosphere" in the ch9.txt and the ch6.txt files. I tell grep to print out only the name of the file that contains that word using the -l flag. The output printed ch9.txt, meaning that the word exists in that text file, not in the ch6.txt file. 
 
 **-i Flag** 
+
 The -i flag when using grep is used when you want to ignore the case of the word you are searching for. 
-When grep searches for the string in the file, it searches for the exact match. In other words, it also matches the case that you provide. When the -i flag is used, the case of the word is ignored, so it searches for all instances of the sequence of characters. 
+When grep searches for the string in the file, it searches for the exact match. In other words, it also matches the case that you provide. When the -i
+flag is used, the case of the word is ignored, so it searches for all instances of the sequence of characters. 
+
+``` 
+[hpai@ieng6-203]:OUP:421$ grep -r -i "Robust" Kauffman
+Kauffman/ch8.txt:•The number of state cycle attractors robustly scales as a square root function of the number of genes in 
+the ordered regime. The number of cell types in real cells scales as roughly a square root to a linear function of the 
+estimated number of genes in that organism, from yeast to sponge to worm to man. Indeed, the square root of , is about , and 
+Bruce Alberts and colleagues quote the number of cell types in humans as .
+
+Kauffman/ch9.txt:Robust Constructibility
+
+Kauffman/ch9.txt:My first purpose in investing in an entire box of Legos was to explore and define concepts of “robust 
+constructibility.” We have succeeded, but run into fascinating problems of a general phase transition in problem solvability. 
+In turn, this very phase transition suggests that in a coconstructing biosphere or econosphere rather specific restrictions 
+arise and are respected by critters and firms, creatures and cognoscenti.
+
+...
+```
+> grep output when using -i on the Kauffman directory
+
+In the above example, I was searching for the string "Robust" since I used the -i flag, grep searched for all instances of the sequence of characters and omitted any instances of lowercase and uppercase characters. We see this within the first two text files, where it shows "robust" and "Robust", 
+proving that casing was disregarded. 
+
+``` 
+```
+**-n Flag** 
+
+The -n flag prints out the line number where the specified string is found in the file. This can be combined with other flags to alter the terminal's output, as shown below. 
+
+```
+[hpai@ieng6-203]:OUP:433$ grep -r -n "Neighboring" Kauffman
+Kauffman/ch8.txt:185:If one thinks of the measure of how close the output of a binary string program is to the 
+correct program as the “fitness” of that trial binary string, then the fitness can be thought of as a height. The 
+distribution of heights over the dimensional Boolean hypercube therefore creates a fitness landscape. In fact, my 
+conjecture amounts to stating that the resulting fitness landscape is completely random. Neighboring points have 
+fitnesses that have no correlation.
+```
+> Terminal output when using -n flag
+
+As we can see in the output, the -n flag only adds a slight, but important change in the terminal's output. The -n flag includes the line number in which the word is found. As we can see above, the word "Neighboring" is found on line 185 in the ch8.txt file.
+
+```
+[hpai@ieng6-203]:OUP:434$ grep -r -n -l "Neighboring" Kauffman
+Kauffman/ch8.txt
+```
+> Terminal output when using the -n and -l flags
+
+In the above example, I ran the same -n command, but also included the -l flag, which only lists the names of the files in which the word is found. Since the -l flag only lists filenames, we can see that the -n flag had no effect on the output, despite coming first in the command. This leads me to believe that certain flags have priority over others because if the order of the -n and -l flags were switched, the same output is shown.
 
 
