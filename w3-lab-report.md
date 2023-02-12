@@ -72,6 +72,17 @@ written_2/non-fiction/OUP/Berk/ch1.txt
 written_2/non-fiction/OUP/Berk/ch2.txt
 written_2/non-fiction/OUP/Berk/ch7.txt
 ```
+> Output when adding -l flag to the Berk directory
+
+As seen in the above output, when I used the -l command, the terminal only printed out the names of the files that contained the given word, as opposed to printing out the file names and the contents of the file. 
+
+``` 
+[hpai@ieng6-203]:OUP:407$ grep -l "econosphere" Kauffman/ch9.txt Kauffman/ch6.txt
+Kauffman/ch9.txt
+``` 
+> Terminal output when only using -l flag and passing in two text files
+
+In the above example, I searching for the word "econosphere" in the ch9.txt and the ch6.txt files. I tell grep to print out only the name of the file that contains that word using the -l flag. The output printed ch9.txt, meaning that the word exists in that text file, not in the ch6.txt file. 
 
 **-i Flag** 
 The -i flag when using grep is used when you want to ignore the case of the word you are searching for. 
