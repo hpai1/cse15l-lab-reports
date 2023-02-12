@@ -8,7 +8,7 @@ In this report, I will be exploring the grep command. The grep command is used t
 
 **-r Flag** 
 
-The -r flag is used to search recursively within a directory. This is useful if the file system has a complex heirarchy because grep can just search all the files within the given directory. The command follows `$ grep -r "*word*" *directory*` 
+The -r flag is used to search recursively within a directory. This is useful if the file system has a complex heirarchy because grep can just search all the files within the given directory. The command follows `$ grep -r "word" directory` 
 
 ```
 [hpai@ieng6-203]:skill-demo1-data:384$ grep -r "world" written_2/non-fiction/OUP/Berk/
