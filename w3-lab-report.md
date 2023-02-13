@@ -12,27 +12,36 @@ The -r flag is used to search recursively within a directory. This is useful if 
 **Example 1**
 ```
 [hpai@ieng6-203]:skill-demo1-data:384$ grep -r "world" written_2/non-fiction/OUP/Berk/
-written_2/non-fiction/OUP/Berk/CH4.txt:Psychoanalyst Erik Erikson built on Freud’s vision, expanding his picture of 
-make-believe. According to Erikson, children draw on fantasy play to ﬁnd out about themselves and their social world.
-1 In all cultures, children act out family roles and highly visibleoccupations—police officer, doctor, and nurse in 
-our society; rabbit hunter and potter among the Hopi Indians; and hut builder and spear maker among the Baka of West 
-Africa. 2 As they do so, they enter a small social organization whose members must cooperate to achieve common goals. 
-And through observing and emulating admired adult ﬁgures, preschoolers internalize social norms and gain a sense of 
-their future, of what they can become and how they can contribute to society. 
 
-written_2/non-fiction/OUP/Berk/CH4.txt:Piaget acknowledged the emotional function of play, and he agreed that through 
-pretending, children become familiar with social-role possibilities. But he is best known for stressing the symbolic 
-nature of make-believe. Pretending, Piaget pointed out, is a vital means of mentally representing the world that, along 
-with gestures, language, and drawings, develops rapidly in early childhood. Through it, children practice and strengthen 
-their capacity to represent their experiences.3 For example, when Sophie pretended to put the animals to bed and used a 
-TinkerToy to stand for a lollipop, she represented in her mind what formerly she could experience only directly—by going 
-to bed or sucking a lollipop. Practicing and solidifying modes of representation, Piaget emphasized, make it possible for 
-the child to free thought from the here and now; create larger images of reality that take into account past, present, 
-and future; and transform those images mentally in the service of logical thinking. 
+written_2/non-fiction/OUP/Berk/CH4.txt:Psychoanalyst Erik Erikson built on Freud’s 
+vision, expanding his picture of make-believe. According to Erikson, children draw 
+on fantasy play to ﬁnd out about themselves and their social world. 1 In all 
+cultures, children act out family roles and highly visibleoccupations—police officer, 
+doctor, and nurse in our society; rabbit hunter and potter among the Hopi Indians; 
+and hut builder and spear maker among the Baka of West Africa. 2 As they do so, they 
+enter a small social organization whose members must cooperate to achieve common 
+goals. And through observing and emulating admired adult ﬁgures, preschoolers 
+internalize social norms and gain a sense of their future, of what they can become 
+and how they can contribute to society. 
 
-written_2/non-fiction/OUP/Berk/CH4.txt:Around age 2, children begin to pretend with less realistic toys, such as a block 
-for a telephone. And sometime during the third year, they can imagine objects and events with little or no support from 
-the real world, as when they say to a play
+written_2/non-fiction/OUP/Berk/CH4.txt:Piaget acknowledged the emotional function 
+of play, and he agreed that through pretending, children become familiar with 
+social-role possibilities. But he is best known for stressing the symbolic nature 
+of make-believe. Pretending, Piaget pointed out, is a vital means of mentally 
+representing the world that, along with gestures, language, and drawings, develops 
+rapidly in early childhood. Through it, children practice and strengthen their 
+capacity to represent their experiences.3 For example, when Sophie pretended to 
+put the animals to bed and used a TinkerToy to stand for a lollipop, she represented 
+in her mind what formerly she could experience only directly—by going to bed or 
+sucking a lollipop. Practicing and solidifying modes of representation, Piaget 
+emphasized, make it possible for the child to free thought from the here and now; 
+create larger images of reality that take into account past, present, and future; 
+and transform those images mentally in the service of logical thinking. 
+
+written_2/non-fiction/OUP/Berk/CH4.txt:Around age 2, children begin to pretend with 
+less realistic toys, such as a block for a telephone. And sometime during the third 
+year, they can imagine objects and events with little or no support from the real 
+world, as when they say to a play
 ...
 ```
 > Truncated output when using -r flag on the Berk directory when searching for the word "world"
@@ -41,25 +50,34 @@ In the above command, grep searched recursively for the word "world" in the Berk
 
 **Example 2**
 ```
-[hpai@ieng6-203]:skill-demo1-data:387$ grep -r "world" written_2/non-fiction/OUP/Berk/ch7.txt
-In this chapter, I take up dilemmas that today’s parents face in rearing young children. Throughout this book, we have 
-touched on myriad forces that make contemporary parenting highly challenging. These include one-sided, contradictory 
-messages in the parenting-advice literature; career pressures that impinge on parent involvement in children’s lives; 
-abysmally weak American child-care services to assist employed parents in their child-rearing roles; cultural violence 
-and excessive materialism permeating children’s worlds; schools with less than optimal conditions for children’s learning; 
-and impediments to granting children with deﬁcits and disabilities social experiences that maximize their development. 
+[hpai@ieng6-203]:skill-demo1-data:387$ grep -r "world" written_2/non-fiction
+/OUP/Berk/ch7.txt
+                                       
+In this chapter, I take up dilemmas that today’s parents face in rearing young 
+children. Throughout this book, we have touched on myriad forces that make 
+contemporary parenting highly challenging. These include one-sided, contradictory 
+messages in the parenting-advice literature; career pressures that impinge on parent 
+involvement in children’s lives; abysmally weak American child-care services to 
+assist employed parents in their child-rearing roles; cultural violence and 
+excessive materialism permeating children’s worlds; schools with less than optimal 
+conditions for children’s learning; and impediments to granting children with 
+deﬁcits and disabilities social experiences that maximize their development. 
 
-Parents are wise to limit children’s access to TV to about one to one-and-a-half hours a day—no more than 10 hours a week. 
-Following that guideline would cut the exorbitant number of hours children spend watching TV by 50 to 75 percent. Parents 
-also need to prohibit violent TV and orient children toward educational programs that inform them about their world and 
-toward entertainment shows that teach positive values and social skills. In Chapter 2, I explained how readily children can 
-pick up negative attitudes and behaviors from television. Fortunately, children can just as easily absorb worthwhile 
-messages and information from TV, so parental guidance in this area can have great beneﬁts for development.
+Parents are wise to limit children’s access to TV to about one to one-and-a-half 
+hours a day—no more than 10 hours a week. Following that guideline would cut the 
+exorbitant number of hours children spend watching TV by 50 to 75 percent. Parents 
+also need to prohibit violent TV and orient children toward educational programs 
+that inform them about their world and toward entertainment shows that teach 
+positive values and social skills. In Chapter 2, I explained how readily children 
+can pick up negative attitudes and behaviors from television. Fortunately, children 
+can just as easily absorb worthwhile messages and information from TV, so parental 
+guidance in this area can have great beneﬁts for development.
 
-Chinese and Japanese parents spend a great deal of time helping their children with homework—far more than American parents 
-do. Asian parents also communicate often with teachers about how to help their child learn at his or her best. Rather than 
-being dependent, Chinese and Japanese students develop into well adjusted, excellent students51—at the top in academic 
-achievement in the world. 
+Chinese and Japanese parents spend a great deal of time helping their children 
+with homework—far more than American parents do. Asian parents also communicate 
+often with teachers about how to help their child learn at his or her best. Rather 
+than being dependent, Chinese and Japanese students develop into well adjusted, 
+excellent students51—at the top in academic achievement in the world. 
 ```
 > Output when using -r flag on the ch7.txt file in the Berk directory
 
@@ -75,7 +93,9 @@ names.
 
 **Example 1**
 ```
-[hpai@ieng6-203]:skill-demo1-data:390$ grep -r -l "world" written_2/non-fiction/OUP/Berk/
+[hpai@ieng6-203]:skill-demo1-data:390$ grep -r -l "world" written_2/non-fiction/
+OUP/Berk/
+
 written_2/non-fiction/OUP/Berk/CH4.txt
 written_2/non-fiction/OUP/Berk/ch1.txt
 written_2/non-fiction/OUP/Berk/ch2.txt
@@ -88,6 +108,7 @@ As seen in the above output, when I used the -l command, the terminal only print
 **Example 2**
 ``` 
 [hpai@ieng6-203]:OUP:407$ grep -l "econosphere" Kauffman/ch9.txt Kauffman/ch6.txt
+
 Kauffman/ch9.txt
 ``` 
 > Terminal output when only using -l flag and passing in two text files
@@ -101,11 +122,14 @@ The -n flag prints out the line number where the specified string is found in th
 **Example 1**
 ```
 [hpai@ieng6-203]:OUP:433$ grep -r -n "Neighboring" Kauffman
-Kauffman/ch8.txt:185:If one thinks of the measure of how close the output of a binary string program is to the 
-correct program as the “fitness” of that trial binary string, then the fitness can be thought of as a height. The 
-distribution of heights over the dimensional Boolean hypercube therefore creates a fitness landscape. In fact, my 
-conjecture amounts to stating that the resulting fitness landscape is completely random. Neighboring points have 
-fitnesses that have no correlation.
+
+Kauffman/ch8.txt:185:If one thinks of the measure of how close the output of a 
+binary string program is to the correct program as the “fitness” of that trial 
+binary string, then the fitness can be thought of as a height. The distribution of 
+heights over the dimensional Boolean hypercube therefore creates a fitness 
+landscape. In fact, my conjecture amounts to stating that the resulting fitness 
+landscape is completely random. Neighboring points have fitnesses that have no 
+correlation.
 ```
 > Terminal output when using -n flag
 
@@ -114,6 +138,7 @@ As we can see in the output, the -n flag only adds a slight, but important chang
 **Example 2**
 ```
 [hpai@ieng6-203]:OUP:434$ grep -r -n -l "Neighboring" Kauffman
+
 Kauffman/ch8.txt
 ```
 > Terminal output when using the -n and -l flags
@@ -129,18 +154,22 @@ flag is used, the case of the word is ignored, so it searches for all instances 
 **Example 1**
 ``` 
 [hpai@ieng6-203]:OUP:421$ grep -r -i "Robust" Kauffman
-Kauffman/ch8.txt:•The number of state cycle attractors robustly scales as a square root function of the number of genes in 
-the ordered regime. The number of cell types in real cells scales as roughly a square root to a linear function of the 
-estimated number of genes in that organism, from yeast to sponge to worm to man. Indeed, the square root of , is about , and 
-Bruce Alberts and colleagues quote the number of cell types in humans as .
+
+Kauffman/ch8.txt:•The number of state cycle attractors robustly scales as a square 
+root function of the number of genes in the ordered regime. The number of cell 
+types in real cells scales as roughly a square root to a linear function of the 
+estimated number of genes in that organism, from yeast to sponge to worm to man. 
+Indeed, the square root of , is about , and Bruce Alberts and colleagues quote the 
+number of cell types in humans as .
 
 Kauffman/ch9.txt:Robust Constructibility
 
-Kauffman/ch9.txt:My first purpose in investing in an entire box of Legos was to explore and define concepts of “robust 
-constructibility.” We have succeeded, but run into fascinating problems of a general phase transition in problem solvability. 
-In turn, this very phase transition suggests that in a coconstructing biosphere or econosphere rather specific restrictions 
-arise and are respected by critters and firms, creatures and cognoscenti.
-
+Kauffman/ch9.txt:My first purpose in investing in an entire box of Legos was to 
+explore and define concepts of “robust constructibility.” We have succeeded, but run 
+into fascinating problems of a general phase transition in problem solvability. In turn, 
+this very phase transition suggests that in a coconstructing biosphere or econosphere 
+rather specific restrictions arise and are respected by critters and firms, creatures 
+and cognoscenti.
 ...
 ```
 > grep output when using -i on the Kauffman directory
@@ -151,6 +180,7 @@ proving that casing was disregarded.
 **Example 2**
 ``` 
 [hpai@ieng6-203]:OUP:440$ grep -n -i -l "Neighboring" Kauffman/ch9.txt Kauffman/ch8.txt
+
 Kauffman/ch9.txt
 Kauffman/ch8.txt
 ```
