@@ -3,6 +3,7 @@
 *Hrithik Pai - A17311788*
 
 In this report, I will be exploring the grep command. The grep command is used to search for a string within files. As with any other command, grep has flags that can be used to alter the output. Here, I will be discussing 4 of these flags. 
+
 Sources used: [Grep Documentation](https://man7.org/linux/man-pages/man1/grep.1.html) and `$ man grep` command
 
 
