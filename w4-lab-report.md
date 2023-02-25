@@ -16,7 +16,9 @@ To log in, use the command `$ ssh cs15lwi23afr@ieng6.ucsd.edu`.
 Be sure to replace the **afr** with your own letters. 
 If all the set-up was done properly, the terminal shouldn't require a password and should display the screen below. 
 
-<img width="486" alt="Screen Shot 2023-02-25 at 11 35 32 AM" src="https://user-images.githubusercontent.com/69052552/221376232-858b456c-2d05-4804-b0e5-c93ad5bd07b6.png">
+<img width="485" alt="Screen Shot 2023-02-25 at 11 36 07 AM" src="https://user-images.githubusercontent.com/69052552/221376250-692a37e7-b521-45fd-aa34-7e6898d1696f.png">
+
+> Terminal window showing successful log-in to ieng6. Note that there was no password required at log in, which was done in the setup phase.
 
 **Example 2**
 ```
