@@ -39,9 +39,30 @@ To ensure that the lab7 repo was cloned, type `$ ls <enter>` and you should see 
 
  > Screenshot showing the commands to clone the repository using the ssh url and making sure that it got cloned.
 
-## -n Flag 
+## Step 3 - Running the Java tests, showing that they failed
 
-The -n flag prints out the line number where the specified string is found in the file. This can be combined with other flags to alter the terminal's output, as shown below. 
+In this step, we need to run java junit tests on a certain file to show that they failed. 
+
+To do this, we need to use a series of commands. 
+Firstly, we need to navigate into the lab7 directory using the command `$ cd l<tab> <enter>` 
+The *tab* key autofills the rest of the command, which is why you may have noticed the *l* became *lab7/* after hitting the key. 
+
+To find what files are in this repo, use the *ls* command: `$ ls <enter>`. We could also type `<up><up>` to retrieve the *ls* command stored in history then type `<enter>` to execute the *ls* command.
+
+We see that there are two files of interest, *ListExamples.java* and *ListExamplesTests.java*. 
+We need to run the tests on the *ListExamplesTests.java* file because as the name suggests, that is the file that contains the junit tests. 
+
+Since this is our first time running the java tests, we would need to type out the entire command to compile and run the java tests. 
+The command to compile is `$ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java <enter>`. 
+The command to run the test is `$ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore L <tab> T <tab> <delete> <enter>` 
+
+In the above command, the first `<tab>` button autofills to *ListExamples*. To get the *Test* part, you would need to type *T* then autofill the rest. The tab button completes it to *ListExamplesTab.* The period isn't needed at the end, so you would need to delete that before executing the command.
+
+It should match the output below. 
+
+<img width="967" alt="Screen Shot 2023-02-25 at 12 05 36 PM" src="https://user-images.githubusercontent.com/69052552/221377375-e7a4effa-888a-4105-8faf-7dc5a05833bb.png">
+
+> Output showing that the tests ran successfully and one of them failed.
 
 **Example 1**
 ```
