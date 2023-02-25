@@ -64,72 +64,46 @@ It should match the output below.
 
 > Output showing that the tests ran successfully and one of them failed.
 
-**Example 1**
-```
-[hpai@ieng6-203]:OUP:433$ grep -r -n "Neighboring" Kauffman
+## Step 4 - Editing the code to fix the failing test
 
-Kauffman/ch8.txt:185:If one thinks of the measure of how close the output of a 
-binary string program is to the correct program as the “fitness” of that trial 
-binary string, then the fitness can be thought of as a height. The distribution of 
-heights over the dimensional Boolean hypercube therefore creates a fitness 
-landscape. In fact, my conjecture amounts to stating that the resulting fitness 
-landscape is completely random. Neighboring points have fitnesses that have no 
-correlation.
-```
-> Terminal output when using -n flag
+From the above output, we see that the test timed out, meaning that there is an infinite loop in the code somewhere. 
 
-As we can see in the output, the -n flag only adds a slight, but important change in the terminal's output. The -n flag includes the line number in which the word is found. As we can see above, the word "Neighboring" is found on line 185 in the ch8.txt file.
+To edit the file, we can use the *nano* command. We would type in the following command: `$ nano L<tab>.n<tab> <enter>` to open the editor file within the command.
 
-**Example 2**
-```
-[hpai@ieng6-203]:OUP:434$ grep -r -n -l "Neighboring" Kauffman
+After reading through the file, the error is at the very end of the file, so use the `<down>` button to scroll to the last while loop. 
+The error arises because *index1* is being changed instead of *index2*, so use the `<right>` arrow keys to position your cursor to the below position.
 
-Kauffman/ch8.txt
-```
-> Terminal output when using the -n and -l flags
+<img width="286" alt="Screen Shot 2023-02-25 at 12 48 00 PM" src="https://user-images.githubusercontent.com/69052552/221378980-42fe0db5-4f52-4185-85e0-8bb72c120374.png">
 
-In the above example, I ran the same -n command, but also included the -l flag, which only lists the names of the files in which the word is found. Since the -l flag only lists filenames, we can see that the -n flag had no effect on the output, despite coming first in the command. This leads me to believe that certain flags have priority over others because if the order of the -n and -l flags were switched, the same output is shown.
+Then, type `<delete> 2`, which should change the code to *index2 += 1*. To save your changes, type `<Control + O> <Enter>`. To exit, type `<Control + X>`. 
+You should be back to the regular terminal window. 
 
-## -i Flag 
+## Step 5 - Run the tests again to prove they pass
 
-The -i flag when using grep is used when you want to ignore the case of the word you are searching for. 
-When grep searches for the string in the file, it searches for the exact match. In other words, it also matches the case that you provide. When the -i
-flag is used, the case of the word is ignored, so it searches for all instances of the sequence of characters. 
+To run the tests again, you can use your terminal's history instead of rewriting the entire command. 
 
-**Example 1**
-``` 
-[hpai@ieng6-203]:OUP:421$ grep -r -i "Robust" Kauffman
+To do this, we first need to recompile the files, so type `<up><up><up><enter>`. The three up arrows should bring up the command used to compile the files, then hit enter to run the command. 
 
-Kauffman/ch8.txt:•The number of state cycle attractors robustly scales as a square 
-root function of the number of genes in the ordered regime. The number of cell 
-types in real cells scales as roughly a square root to a linear function of the 
-estimated number of genes in that organism, from yeast to sponge to worm to man. 
-Indeed, the square root of , is about , and Bruce Alberts and colleagues quote the 
-number of cell types in humans as .
+To run the tests, we will follow a similar procedure, so type `<up><up><up><enter>` to bring up the right command and execute it. 
 
-Kauffman/ch9.txt:Robust Constructibility
+If all the steps were done properly and the file was properly saved, we should see the below screen. 
 
-Kauffman/ch9.txt:My first purpose in investing in an entire box of Legos was to 
-explore and define concepts of “robust constructibility.” We have succeeded, but run 
-into fascinating problems of a general phase transition in problem solvability. In turn, 
-this very phase transition suggests that in a coconstructing biosphere or econosphere 
-rather specific restrictions arise and are respected by critters and firms, creatures 
-and cognoscenti.
-...
-```
-> grep output when using -i on the Kauffman directory
+<img width="972" alt="Screen Shot 2023-02-25 at 12 53 11 PM" src="https://user-images.githubusercontent.com/69052552/221379153-865d6536-5326-4f92-b756-648c5a8fc053.png">
 
-In the above example, I was searching for the string "Robust" since I used the -i flag, grep searched for all instances of the sequence of characters and omitted any instances of lowercase and uppercase characters. We see this within the first two text files, where it shows "robust" and "Robust", 
-proving that casing was disregarded. 
+> Terminal output showing all the tests passed.
 
-**Example 2**
-``` 
-[hpai@ieng6-203]:OUP:440$ grep -n -i -l "Neighboring" Kauffman/ch9.txt Kauffman/ch8.txt
+## Step 6 - Commit and Push the changes to github
 
-Kauffman/ch9.txt
-Kauffman/ch8.txt
-```
-> Output when combining the -i, -n, and -l flags
+To commit and push the changes to github, we first need to add all our changes to be pushed. 
 
-In the above example, I combined the -i, -n, and -l flags and specified two files two search for within the Kauffman directory. The -i flag tells grep to search for the word Neighboring, but exclude cases, meaning that it would identify "neighboring" as a valid word. The -n flag tells grep to print out the line numbers where each word is found, but the -l flag over-writes the -n flag and prints out only the file names. Since we see both the ch8.txt and ch9.txt files, we know that the specified sequence of characters exists in both files, but we do not know the cases of each letter.
+To do this, we can use the command `$ git add .`, which adds all the files that were changed. 
+Then, we need to commit our changes with a message, so type `$ git commit -m "Fixed the code"`. Feel free to replace the message with anything you like. 
+In the above command, the -m flag means that we are adding a message. 
 
+Then finally, push the changes by using the command `$ git push`. 
+
+If all the steps above and the inital ssh setup were done right, the below output should appear on the terminal.
+
+<img width="573" alt="Screen Shot 2023-02-25 at 12 56 37 PM" src="https://user-images.githubusercontent.com/69052552/221379247-3ff85335-f2a2-43e0-95f0-2fac7bddf101.png">
+
+> Terminal output showing successful adding, committing, and pushing of changes to the remote repository.
