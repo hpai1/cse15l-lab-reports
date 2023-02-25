@@ -12,80 +12,32 @@ For this lab report, I will be performing these commands on a new terminal windo
 To log in to ieng6, use the ssh command, which is used to connect to a remote machine through the command line. 
 One can use the `<up>` button to retrieve the previous command, but since my terminal window is new, there is no history saved.
 
-To log in, use the command `$ ssh cs15lwi23afr@ieng6.ucsd.edu`. 
-Be sure to replace the **afr** with your own letters. 
+To log in, use the command `$ ssh cs15lwi23afr@ieng6.ucsd.edu <enter>`. 
+Be sure to replace the *afr* with your own letters. 
 If all the set-up was done properly, the terminal shouldn't require a password and should display the screen below. 
 
 <img width="485" alt="Screen Shot 2023-02-25 at 11 36 07 AM" src="https://user-images.githubusercontent.com/69052552/221376250-692a37e7-b521-45fd-aa34-7e6898d1696f.png">
 
 > Terminal window showing successful log-in to ieng6. Note that there was no password required at log in, which was done in the setup phase.
 
-**Example 2**
-```
-[hpai@ieng6-203]:skill-demo1-data:387$ grep -r "world" written_2/non-fiction
-/OUP/Berk/ch7.txt
-                                       
-In this chapter, I take up dilemmas that today’s parents face in rearing young 
-children. Throughout this book, we have touched on myriad forces that make 
-contemporary parenting highly challenging. These include one-sided, contradictory 
-messages in the parenting-advice literature; career pressures that impinge on parent 
-involvement in children’s lives; abysmally weak American child-care services to 
-assist employed parents in their child-rearing roles; cultural violence and 
-excessive materialism permeating children’s worlds; schools with less than optimal 
-conditions for children’s learning; and impediments to granting children with 
-deﬁcits and disabilities social experiences that maximize their development. 
 
-Parents are wise to limit children’s access to TV to about one to one-and-a-half 
-hours a day—no more than 10 hours a week. Following that guideline would cut the 
-exorbitant number of hours children spend watching TV by 50 to 75 percent. Parents 
-also need to prohibit violent TV and orient children toward educational programs 
-that inform them about their world and toward entertainment shows that teach 
-positive values and social skills. In Chapter 2, I explained how readily children 
-can pick up negative attitudes and behaviors from television. Fortunately, children 
-can just as easily absorb worthwhile messages and information from TV, so parental 
-guidance in this area can have great beneﬁts for development.
+## Step 2 - Cloning the fork of the repository
 
-Chinese and Japanese parents spend a great deal of time helping their children 
-with homework—far more than American parents do. Asian parents also communicate 
-often with teachers about how to help their child learn at his or her best. Rather 
-than being dependent, Chinese and Japanese students develop into well adjusted, 
-excellent students51—at the top in academic achievement in the world. 
-```
-> Output when using -r flag on the ch7.txt file in the Berk directory
+In this step, we will be cloning the forked repository. In the set-up phase, we forked [this](https://github.com/ucsd-cse15l-w23/lab7) repository. Forking a repository means to create a copy of it on your account. The typical naming convention of the repository would be *github.com/hpai1/lab7*, except the *hpai1* path would be replaced with your github username. 
 
-As we can see from above, the -r flag 
-can also be used on a .txt file, meaning it will not throw an error if a directory is not provided. If we give a .txt file to the -r flag, the -r flag's
-function gets omitted because there is nothing to search recursively for. 
+In that github repo, find the ssh key url for cloning. As seen in the below picture, you should be able to find it under the *code* tab. 
 
-## -l Flag 
+<img width="392" alt="Screen Shot 2023-02-25 at 11 45 21 AM" src="https://user-images.githubusercontent.com/69052552/221376618-88e96719-2720-472f-ac67-51e6a1d46b31.png">
 
-The -l flag is used to list only the files names of the files which are found using grep. In the above output, it can be tedious trying to sort through the
-files if you are trying to search for a particular file name, which is where -l is helpful. It omits all the text that is printed, and only prints the file
-names.
+> Screenshot showing where to find the ssh url to clone.
 
-**Example 1**
-```
-[hpai@ieng6-203]:skill-demo1-data:390$ grep -r -l "world" written_2/non-fiction/
-OUP/Berk/
+Copy that ssh url and in the terminal, type `$ git clone <Command + v> <enter>`
 
-written_2/non-fiction/OUP/Berk/CH4.txt
-written_2/non-fiction/OUP/Berk/ch1.txt
-written_2/non-fiction/OUP/Berk/ch2.txt
-written_2/non-fiction/OUP/Berk/ch7.txt
-```
-> Output when adding -l flag to the Berk directory
+To ensure that the lab7 repo was cloned, type `$ ls <enter>` and you should see a lab7 directory in your remote account.
 
-As seen in the above output, when I used the -l command, the terminal only printed out the names of the files that contained the given word, as opposed to printing out the file names and the contents of the file. 
+<img width="523" alt="Screen Shot 2023-02-25 at 11 48 12 AM" src="https://user-images.githubusercontent.com/69052552/221376721-3d5d4bc6-af90-4b37-8961-c0031114c71f.png">
 
-**Example 2**
-``` 
-[hpai@ieng6-203]:OUP:407$ grep -l "econosphere" Kauffman/ch9.txt Kauffman/ch6.txt
-
-Kauffman/ch9.txt
-``` 
-> Terminal output when only using -l flag and passing in two text files
-
-In the above example, I searching for the word "econosphere" in the ch9.txt and the ch6.txt files. I tell grep to print out only the name of the file that contains that word using the -l flag. The output printed ch9.txt, meaning that the word exists in that text file, not in the ch6.txt file. 
+ > Screenshot showing the commands to clone the repository using the ssh url and making sure that it got cloned.
 
 ## -n Flag 
 
