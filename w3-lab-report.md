@@ -9,7 +9,7 @@ Sources used: [Grep Documentation](https://man7.org/linux/man-pages/man1/grep.1.
 
 ## -r Flag 
 
-The -r flag is used to search recursively within a directory. This is useful if the file system has a complex heirarchy because grep can just search all the files within the given directory. The command follows `$ grep -r "word" directory` 
+The -r flag is used to search recursively within a directory. By searching recursively, grep will search for all files within the given directory, even if they are within sub-directories in the working directory. On the contrary, the 'normal' grep command will only search for files one level lower than the working directory, instead of looking into other folders. This is useful if the file system has a complex hierarchy because grep can just search all the files within the given directory. The command follows `$ grep -r "word" directory` 
 
 **Example 1**
 ```
