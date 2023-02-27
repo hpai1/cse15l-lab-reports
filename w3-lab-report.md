@@ -52,40 +52,53 @@ In the above command, grep searched recursively for the word "world" in the Berk
 
 **Example 2**
 ```
-[hpai@ieng6-203]:skill-demo1-data:387$ grep -r "world" written_2/non-fiction
-/OUP/Berk/ch7.txt
-                                       
-In this chapter, I take up dilemmas that today’s parents face in rearing young 
-children. Throughout this book, we have touched on myriad forces that make 
-contemporary parenting highly challenging. These include one-sided, contradictory 
-messages in the parenting-advice literature; career pressures that impinge on parent 
-involvement in children’s lives; abysmally weak American child-care services to 
-assist employed parents in their child-rearing roles; cultural violence and 
-excessive materialism permeating children’s worlds; schools with less than optimal 
-conditions for children’s learning; and impediments to granting children with 
-deﬁcits and disabilities social experiences that maximize their development. 
+[hpai@ieng6-203]:~:450$ grep -r "world" skill-demo1-data/ 
 
-Parents are wise to limit children’s access to TV to about one to one-and-a-half 
-hours a day—no more than 10 hours a week. Following that guideline would cut the 
-exorbitant number of hours children spend watching TV by 50 to 75 percent. Parents 
-also need to prohibit violent TV and orient children toward educational programs 
-that inform them about their world and toward entertainment shows that teach 
-positive values and social skills. In Chapter 2, I explained how readily children 
-can pick up negative attitudes and behaviors from television. Fortunately, children 
-can just as easily absorb worthwhile messages and information from TV, so parental 
-guidance in this area can have great beneﬁts for development.
+skill-demo1-data/written_2/non-fiction/OUP/Abernathy/ch1.txt:Product proliferation 
+and shorter product cycles, reflected in ever-changing styles and product 
+differentiation, contribute to general demand uncertainty for both retailers and 
+manufacturers, thereby making demand forecasting and production planning harder every 
+day. In a world where manufacturers must supply an increasing number of products 
+with fashion elements, speed and flexibility are crucial capabilities for firms 
+wrestling with product proliferation, whether they are retailers trying to offer a 
+wide range of choices to consumers or manufacturers responding to retail demands 
+for shipments. skill-demo1-data/written_2/non-fiction/OUP/Abernathy/ch1.txt:In 
+conventional terms, these three sectors are considered distinct industries, 
+separated by traditional market relationships. For example, arm’s-length transactions 
+between retail buyers and apparel sellers determine prices and quantities of goods to 
+be delivered. Apparel companies periodically made deliveries based on these contracts 
+and the transaction was then completed. In such a world, coordination problems between 
+the parties were of little concern. 
 
-Chinese and Japanese parents spend a great deal of time helping their children 
-with homework—far more than American parents do. Asian parents also communicate 
-often with teachers about how to help their child learn at his or her best. Rather 
-than being dependent, Chinese and Japanese students develop into well adjusted, 
-excellent students51—at the top in academic achievement in the world. 
+skill-demo1-data/written_2/non-fiction/OUP/Abernathy/ch1.txt:But, as we have already 
+emphasized, this is not the real world of apparel today. At its most fundamental level, 
+the channel perspective reflects a revolution in retail practices. These practices have 
+resulted in the integration of enterprises at all stages of the distribution and 
+production chain, because of the infusion of real-time information on consumer sales. 
+Instead of gearing planning and production decisions to forecasts and guesses made months 
+in advance of a selling season, firms now receive periodic ongoing orders based on actual 
+consumer expenditures. And companies in transformed retail-apparel-textile channels have 
+established a complex web of computer hardware and software, other technologies, and 
+managerial practices that have blurred the traditional boundaries between retailers and 
+suppliers.
+
+skill-demo1-data/written_2/non-fiction/OUP/Abernathy/ch1.txt:A Stitch in Time concludes 
+with a look at the many factors shaping today’s retail-apparel textile channel—from the 
+complex management challenges facing suppliers to labor standards and macroeconomic policy. 
+Chapter 13 (“The Global Marketplace”) reviews trends in U.S. imports and exports of apparel 
+and textiles, including information on trade by countries and specific products. It then 
+connects these trends to changing trade policies, emphasizing the growing regionalization 
+of trade flows in different parts of the world. Chapter 14 (“Suppliers in a Lean World”) 
+examines our survey results from another angle, evaluating firm performance in an integrated 
+channel. Here we highlight the importance of combining information technologies, manufacturing 
+innovations, and new methods of management to respond to lean retailing demands.
+
+...
+
 ```
-> Output when using -r flag on the ch7.txt file in the Berk directory
+> Output when using -r flag on the overall skill-demo1-data directory
 
-As we can see from above, the -r flag 
-can also be used on a .txt file, meaning it will not throw an error if a directory is not provided. If we give a .txt file to the -r flag, the -r flag's
-function gets omitted because there is nothing to search recursively for. 
+As we can see from above, the -r flag was used to search a very large directory for the word *world*. From this example, we see how powerful the -r flag really is because we can search a very large and complex directory for a specific word and get its relative location in the file along with the file name. In the previous example, we used -r on a smaller sub-directory, but the real value of the flag is shown in the above example, where it is meant to be used in larger and more complex file systems, such as the skill-demo1-data directory.
 
 ## -l Flag 
 
@@ -135,7 +148,7 @@ correlation.
 ```
 > Terminal output when using -n flag
 
-As we can see in the output, the -n flag only adds a slight, but important change in the terminal's output. The -n flag includes the line number in which the word is found. As we can see above, the word "Neighboring" is found on line 185 in the ch8.txt file.
+As we can see in the output, the -n flag only adds a slight, but important change in the terminal's output. The -n flag includes the line number in which the word is found. As we can see above, the word "Neighboring" is found on line 185 in the ch8.txt file. The grep -n flag is useful when you want to find the location of a certain word in a file. Similar to using Command + F on a word document, grep -n functions the same way, but through terminal. Then, when you want to edit the file, you can navigate to the specific line number with the word.
 
 **Example 2**
 ```
@@ -145,13 +158,15 @@ Kauffman/ch8.txt
 ```
 > Terminal output when using the -n and -l flags
 
-In the above example, I ran the same -n command, but also included the -l flag, which only lists the names of the files in which the word is found. Since the -l flag only lists filenames, we can see that the -n flag had no effect on the output, despite coming first in the command. This leads me to believe that certain flags have priority over others because if the order of the -n and -l flags were switched, the same output is shown.
+In the above example, I ran the same -n command, but also included the -l flag, which only lists the names of the files in which the word is found. Since the -l flag only lists filenames, we can see that the -n flag had no effect on the output, despite coming first in the command. From trying this combination of flags, we can see that it doesn't make sense to use a -l flag if we want the line numbers because the file names are already given with the -n flag. This leads me to believe that certain flags have priority over others because if the order of the -n and -l flags were switched, the same output is shown.
 
 ## -i Flag 
 
 The -i flag when using grep is used when you want to ignore the case of the word you are searching for. 
 When grep searches for the string in the file, it searches for the exact match. In other words, it also matches the case that you provide. When the -i
 flag is used, the case of the word is ignored, so it searches for all instances of the sequence of characters. 
+
+The -i flag comes in useful for certain log-in features. Some accounts will ingore case on their usernames because they only search for the sequence of characters. In this case, they can use -i to find if the given username is in their file of total usernames without worrying about letter casing.
 
 **Example 1**
 ``` 
