@@ -40,6 +40,7 @@ For example, we had to edit the tester class to add more tests. Instead of doing
 > Screenshot showing output of above command
 
 I can then use the arrow keys and type a new test, like below. 
+
 <img width="436" alt="Screen Shot 2023-03-12 at 11 14 10 AM" src="https://user-images.githubusercontent.com/69052552/224564105-14aae8a4-c12f-4a2a-bf08-ccfb5afe0f22.png">
 
 After typing the above test, I can hit `Ctrl + O` to save the file then `Ctlr + X` to exit the editor.
