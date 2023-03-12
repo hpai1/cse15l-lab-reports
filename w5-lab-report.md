@@ -17,6 +17,7 @@ In this lab, we had to fork a repository that had several java files. Some of th
 
 The lab says that any class that ends in *Examples* has errors and it is our job to find them using the tester class provided any by writing additional tester methods. 
 
+
 When we originally run the tester file, we see that all the tests pass. 
 
 <img width="783" alt="Screen Shot 2023-03-12 at 10 44 00 AM" src="https://user-images.githubusercontent.com/69052552/224562578-6f7a9697-7c46-4730-88ae-1b35f77d80d9.png">
@@ -43,10 +44,14 @@ I can then use the arrow keys and type a new test, like below.
 
 <img width="436" alt="Screen Shot 2023-03-12 at 11 14 10 AM" src="https://user-images.githubusercontent.com/69052552/224564105-14aae8a4-c12f-4a2a-bf08-ccfb5afe0f22.png">
 
+> New test that I wrote in the nano editor
+
 After typing the above test, I can hit `Ctrl + O` to save the file then `Ctlr + X` to exit the editor.
 Now, if we run the tester class again, we can see that the test failed, as expected. 
 
 <img width="769" alt="Screen Shot 2023-03-12 at 11 17 03 AM" src="https://user-images.githubusercontent.com/69052552/224564254-0bd62169-5bf6-4014-a90d-1688b2085751.png">
+
+> Terminal output showing the test that I wrote failed
 
  
 In a similar fashion, I can edit the tester file to write more tests and edit the java files to fix the errors. 
@@ -54,5 +59,11 @@ In a similar fashion, I can edit the tester file to write more tests and edit th
 To expand on my knowledge, I can also use the `jbd` command to walk through the code to see the errors. 
 The `$ jbd` command is used to open a Java debugger tool to see the code execute in real time. You can view values of variables and see what is happening to the variables after each step. 
 I can use this to debug my code and find errors as an alternative to writing Junit tests.
+
+Below, I use the `jbd` command to run the tests. When I run `$ jbd`, I enter a debugging tool. I can enter several commands to set a breakpoint in the code, step over a line, and print local variables. This allows me to see the variables in real time to find the bug in the code. 
+
+<img width="746" alt="Screen Shot 2023-03-12 at 12 37 10 PM" src="https://user-images.githubusercontent.com/69052552/224568759-0d835456-5c02-4fb2-8a01-43d710dbce3a.png">
+
+> Screenshot showing me using jbd to traverse through the code
 
 To commit my changes, I used GitHub Desktop in Week 3, which commits all your changes in the click of a button. Now, I have a lot more github commands in my toolbox. Instead of using GitHub Desktop, I can run the commands `$ git add .` and `$ git push` to push my changes. The `$ git add .` command adds all the changes I made to a local repository. The `git push` command pushes all the changes to the remote repository. 
